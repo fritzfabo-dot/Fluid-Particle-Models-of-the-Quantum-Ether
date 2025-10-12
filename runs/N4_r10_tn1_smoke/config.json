@@ -1,0 +1,15 @@
+{
+  "N": 4,
+  "backend": "TN1",
+  "chi": 0.0,
+  "dt": 0.02,
+  "kappa": 0.1,
+  "label": "tn1-check",
+  "noise": "none",
+  "noise_p": 0.0,
+  "omega": 1.0,
+  "r": 10,
+  "seed": 123,
+  "shots": 1000,
+  "when": "2025-10-12T15:27:05"
+}

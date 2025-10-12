@@ -1,0 +1,7 @@
+run_id,backend,config_path,config_sha256,metrics_path,metrics_sha256,N,r,dt,omega,kappa,chi,noise,noise_p,shots,label
+N4_r10_sv1_smoke,SV1,runs/N4_r10_sv1_smoke/config.json,9731a7b001f75f16b3e8f1d560f5396cb7557cdd8f76e793c273ba4a0b6856f4,runs/N4_r10_sv1_smoke/metrics.json,187520a3a4b75bbf14365192298ded38752c33ff26e9e95be365f5f4e91418fe,4,10,0.02,1.0,0.1,0.0,none,0.0,0,smoke
+N4_r10_sv1_probs,SV1,runs/N4_r10_sv1_probs/config.json,1108cad8323fa75debd160f981cb074b454a8d241684c2ff9b8bee529181d0cc,runs/N4_r10_sv1_probs/metrics.json,e65e4bf31402e170fffd6c69ce847e1ac2f2e45388cd0fb5a1a6062f8ff0256c,4,10,0.02,1.0,0.1,0.0,none,0.0,2000,probabilities
+N4_r10_sv1_smoke,SV1,runs/N4_r10_sv1_smoke/config.json,,runs/N4_r10_sv1_smoke/metrics.json,,4,10,0.02,1.0,0.1,0.0,none,0.0,0,smoke
+N4_r10_sv1_smoke,SV1,runs/N4_r10_sv1_smoke/config.json,,runs/N4_r10_sv1_smoke/metrics.json,,4,10,0.02,1.0,0.1,0.0,none,0.0,0,smoke
+N4_r10_tn1_smoke,TN1,runs/N4_r10_tn1_smoke/config.json,,runs/N4_r10_tn1_smoke/metrics.json,,4,10,0.02,1.0,0.1,0.0,none,0.0,1000,tn1-check
+N4_r10_dm1_depol_p010,DM1,runs/N4_r10_dm1_depol_p010/config.json,,runs/N4_r10_dm1_depol_p010/metrics.json,,4,10,0.02,1.0,0.1,0.0,depolarizing,0.1,1000,dm1-depol

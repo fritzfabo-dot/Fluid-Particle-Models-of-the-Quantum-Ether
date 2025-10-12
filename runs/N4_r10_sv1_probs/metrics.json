@@ -1,0 +1,17 @@
+{
+  "device": "SV1",
+  "deviceArn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+  "execution_ms": 7,
+  "ez_q0": 0.941,
+  "ez_qN1": 0.933,
+  "ez_qmid": 0.923,
+  "gate_count": 130,
+  "has_probabilities": true,
+  "magnetization": 0.93075,
+  "p_all_zero": 0.869,
+  "p_top4_sum": 0.966,
+  "task_arn": "arn:aws:braket:us-east-1:680718730980:quantum-task/80ef39c8-05e2-4e67-8e35-df600531770c",
+  "task_state": "COMPLETED",
+  "wall_clock_s_client": 5.509468,
+  "z_sum": 3.723
+}

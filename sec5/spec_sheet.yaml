@@ -1,0 +1,76 @@
+baseline:
+  birefringence: false     # beta=0, no traceless anisotropy
+  directional_response: [C1, C2]
+
+frequencies:
+  optical:
+    lambda_m: 1.064e-6
+    f_hz: 2.817598289473684e14
+    omega_rad_s: 1.7703492173955385e15
+  microwave:
+    f_hz: 1.0e10
+    omega_rad_s: 6.283185307179586e10
+
+golden_params:
+  optical:
+    delta_n_iso: 1.0e-11
+    C1: 9.0e-16
+    C2: 5.0e-13
+  microwave:
+    delta_n_iso: 1.0e-9
+    C1: 8.0e-16
+    C2: 8.0e-13
+envelopes:
+  C1_abs_max: 1.0e-15
+  C2_abs_max: 1.0e-12
+
+kinematics:
+  v_orbital: 9.94e-5
+  v_rotational: 1.1e-6
+  frame: SCCEF
+
+sim_knobs_defaults:
+  grid_sites: [4, 8, 16]
+  local_truncation_d: [4, 8]       # levels/site (q=log2 d)
+  trotter_steps: [16, 32, 64]
+  backends: [local, SV1, TN1, DM1]
+
+acceptance:
+  stability:
+    norm_drift_max: 1.0e-6
+  convergence:
+    spatial_order_target: 2
+    spatial_order_band: [1.8, 2.2]
+    trotter_order_1st_band: [0.9, 1.1]
+  harmonics_match:
+    amplitude_rel_err_max: 0.05
+    phase_abs_deg_max: 3
+
+phaseB_defaults:
+  cv_photonics:
+    alpha: 1.0
+    phi_sweep_rad: [0.0, 0.02]
+    nmax_default: 40      # 20 passes; 40 gives headroom
+    acceptance:
+      small_phi_residual_max: 5e-9      # over 0..0.02 for nmax>=20
+      mzi_mean_abs_err_at_phi0p5: 1e-12 # wrt analytic MZI
+
+  qubit_trotter:
+    N: 4
+    d: 4
+    omega: 1.0
+    kappa: 0.1
+    chi: 1e-3
+    T: 0.2
+    r_default: 20
+    r_plot: [10, 20, 40]
+    acceptance:
+      norm_drift_max: 1e-12
+      error_halves_when_r_doubles: true
+      dt_times_normH_ceiling: 0.3   # rule-of-thumb stability budget
+tests:
+  - vacuum_limit_identity_phase: true
+  - small_phi_series_ok: true
+  - truncation_converges: true
+  - trotter_error_halves: true
+  - dipole_scales_with_ng_minus_n0: true

@@ -1,0 +1,13 @@
+{
+  "device": "DM1",
+  "execution_ms": 13,
+  "ez_q0": -0.046,
+  "ez_qN1": 0.002,
+  "ez_qmid": 0.05,
+  "gate_count": 324,
+  "p_all_zero": 0.063,
+  "p_top4_sum": 0.277,
+  "task_arn": "arn:aws:braket:us-east-1:680718730980:quantum-task/f75f9fa9-641c-4b4c-9df7-51643a7d74a6",
+  "wall_clock_s_client": 4.148984,
+  "z_sum": 0.04000000000000001
+}
