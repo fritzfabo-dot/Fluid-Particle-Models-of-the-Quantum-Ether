@@ -12,3 +12,5 @@ This folder contains:
 2. Open the notebooks and run all cells.
 3. Run tests: `pytest -q` inside the sec5 parent.
 All code is NumPy-only (no SciPy required).
+
+## Thank you
